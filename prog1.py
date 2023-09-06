@@ -18,3 +18,4 @@ print("Hello, World!")
 res = f.puissance(2,5)
 
 print(res)
+
