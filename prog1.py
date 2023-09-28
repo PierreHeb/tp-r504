@@ -15,7 +15,7 @@ print("Hello, World!")
 """
 	
 	
-res = f.puissance(0,0)
+res = f.puissance(2,3)
 
 print(res)
 
