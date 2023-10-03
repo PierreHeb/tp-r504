@@ -1,0 +1,66 @@
+Q1.1 - Combien y a-t-il de contributeurs ? (d’après Github) : 9
+Q1.2 -Quel place occupe-t-il sur le disque ? : 408 Ko
+Q1.3 - Lancer la commande git blame sur le fichier index.html
+En vous aidant de git help blame, expliquer en une phrase à quoi sert cette commande : 
+Cela permet de voir toutes les modifications qui ont été effectuées sur le dépot 
+
+Q1.4 - Qui a commité la ligne 329 : Jake Ginnivan
+
+Q1.5 - Notez le hash de ce commit : 3e5d1596
+
+Q1.6 - Avec la commande git show sur ce commit, notez le message de l’auteur du commit : "Adding tag command reference"
+
+Q1.7 - Date de ce commit : Mardi 17 Juin 2014
+
+Q1.8 - En vous aidant de la commande git log <tag>, donner le hash du commit correspondant au
+tag de la version 1.0.0 : 294c63b9653d93caefdd233da52fc0cd6ca95268
+
+Q1.9 - Avec git show, qui est l’auteur de ce commit ? : Wei Wang
+Date : "Tue Jan 6 17:14:04 2015"
+
+
+1.10 - Donner la commande bash qui va vous donner le nombre total de commits (et utilisant l’option
+--oneline de "git log") : git log --oneline | wc -l
+
+et le résultat : 91
+
+
+Q1.11 - La commande "git log" dispose de l’option "format" qui permet de personnaliser l’affichage du
+resultat. Un certain nombre de formats types sont prédéfinis, par exemple essayer :
+$ git log --format=reference
+qui est assez similaire à : $ git log --oneline
+Quelle est la différence ?: On peut formater la sortie comme on le souhaite avec "format" alors que non avec oneline
+
+
+Q1.12 - On peut dans ces formats utiliser des "codes de formats" permettant d’avoir exactement l’infor-
+mation désirée, via la syntaxe $ git log --format="XXXX"
+en placant entre les guillemets des "placeholders".
+Chercher sur la page précédente la chaine à mettre pour avoir uniquement le nom de l’auteur du
+commit : git log --format:"The author of %h was %an"
+
+Q1.13 - Via cette dernière commande, et les outils sort, uniq et wc, donner la commande de type "one-
+liner" qui va afficher le nombre de contributeurs dans ce dépot. Cela correspond-il à ce qui est affiché
+par Github ? git log --format="%an" | sort | uniq | wc -l
+
+
+
+Q2.1 - Ouvrez un shell dans votre "repo" tp-r504 et vérifier que tout est "propre". Quelle est la com-
+mande à utiliser ?: git status 
+
+
+Q2.2 - Quel est le nom de la branche par défaut ?: main
+
+
+Q2.5 - Remontez d’un cran (cd ..) et visualisez l’état du dépot avec $ git status
+Le fichier web/index.html est-il versionné ?: non
+
+Q2.7 - Revenir sur la branche tp2 et ajouter une image sur votre page web. Une fois la modification
+faite, tapez $ git diff. Qu’est-ce que cette commande affiche? : Cela affiche les modifications qui ont été apportées sur le fichier
+
+Q3.1 - Demander à votre voisin son id et cloner son dépot tp-r504 dans votre home. Ajouter du texte
+dans le "readme".
+Avez-vous un moyen de transmettre vos modifications à son dépot ?: non
+
+
+Q3.3 - Si votre voisin ajoute des élements à son dépot, celle-ci sont-elles automatiquement propagées au
+votre ? Faites l’essai.: Non elle ne sont pas automatiquement propagées 
